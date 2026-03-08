@@ -1,0 +1,13 @@
+Price: <input id="price"><br>
+Quantity: <input id="qty"><br>
+<button onclick="bill()">Total</button>
+
+<p id="result"></p>
+
+<script>
+function bill(){
+ let p = document.getElementById("price").value;
+ let q = document.getElementById("qty").value;
+ document.getElementById("result").innerHTML = p*q;
+}
+</script>
